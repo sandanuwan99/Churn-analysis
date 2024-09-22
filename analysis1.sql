@@ -1,3 +1,5 @@
+use db_Churn;
+
 select Gender , count(Gender) as TotalCount,  
 count(Gender)*100.0/(select count(*) from stg_Churn) as Percentage
 from stg_Churn
